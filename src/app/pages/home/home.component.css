@@ -1,0 +1,64 @@
+/* RESET */
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+  font-family: "Arial", sans-serif;
+  background: #f5f7fa;
+  color: #222;
+}
+.container { width:90%; max-width:1200px; margin:auto; }
+
+nav a { color:white; margin-left:22px; text-decoration:none; font-weight:500; }
+nav a:hover { border-bottom:2px solid rgba(255,255,255,0.8); }
+
+/* HERO */
+.hero {
+  position:relative;
+  background-image: url("/assets/Bannerç.jpeg");
+  background-size:cover;
+  background-position:center;
+  height:60vh;
+  display:flex; align-items:center; justify-content:center;
+}
+.hero-overlay { position:absolute; inset:0; background:rgba(0,0,0,0.55); }
+.hero-text { position:relative; color:white; text-align:center; max-width:720px; padding:20px; }
+.hero-text h2 { font-size:2.4rem; margin-bottom:10px; }
+.btn-hero {
+  display:inline-block; margin-top:18px; padding:12px 24px; background:#1976d2; color:white; border-radius:6px; text-decoration:none;
+  transition:0.25s;
+}
+.btn-hero:hover{ background:#0d47a1; transform:translateY(-3px); }
+
+/* SERVICES */
+.services { padding:60px 0; }
+.services h2 { text-align:center; margin-bottom:36px; color:#002f6c; }
+.cards {
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+  gap:24px;
+}
+.card {
+  background:white; border-radius:10px; overflow:hidden; box-shadow:0 6px 18px rgba(0,0,0,0.08); transition:transform .18s;
+}
+.card:hover{ transform:translateY(-6px); }
+.card img{ width:100%; height:200px; object-fit:cover; display:block; }
+.card h3{ margin:16px; color:#0d47a1; }
+.card p{ margin:0 16px 20px; color:#444; }
+
+/* DATACENTERS */
+.datacenters { background:#eef3f9; padding:60px 0; }
+.datacenters h2{ text-align:center; margin-bottom:34px; color:#002f6c; }
+.dc-grid {
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+  gap:22px;
+}
+.dc-card { background:white; border-radius:12px; overflow:hidden; box-shadow:0 5px 15px rgba(0,0,0,0.09); }
+.dc-card img{ width:100%; height:180px; object-fit:cover; }
+.dc-card h3{ margin:18px; color:#0d47a1; }
+.dc-card p{ margin:0 18px 22px; color:#444; }
+
+/* FOOTER */
+footer { background:#001a33; padding:20px 0; text-align:center; color:white; }
+.btn-container {
+  text-align: center;
+}
