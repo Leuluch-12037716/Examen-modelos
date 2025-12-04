@@ -2,12 +2,12 @@
 * { margin:0; padding:0; box-sizing:border-box; }
 body {
   font-family: "Arial", sans-serif;
-  background: #f5f7fa;
+  background: var(--card-bg);
   color: #222;
 }
 .container { width:90%; max-width:1200px; margin:auto; }
 
-nav a { color:white; margin-left:22px; text-decoration:none; font-weight:500; }
+nav a {color: var(--text-color); margin-left:22px; text-decoration:none; font-weight:500; }
 nav a:hover { border-bottom:2px solid rgba(255,255,255,0.8); }
 
 /* HERO */
@@ -30,34 +30,21 @@ nav a:hover { border-bottom:2px solid rgba(255,255,255,0.8); }
 
 /* SERVICES */
 .services { padding:60px 0; }
-.services h2 { text-align:center; margin-bottom:36px; color:#002f6c; }
+.services h2 { text-align:center; margin-bottom:36px; color:var(--text-color); }
+
 .cards {
   display:grid;
   grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
   gap:24px;
 }
 .card {
-  background:white; border-radius:10px; overflow:hidden; box-shadow:0 6px 18px rgba(0,0,0,0.08); transition:transform .18s;
+  background:var(--card-bg); border-radius:10px; overflow:hidden; box-shadow:0 6px 18px var(--text-color); transition:transform .18s;
 }
 .card:hover{ transform:translateY(-6px); }
 .card img{ width:100%; height:200px; object-fit:cover; display:block; }
-.card h3{ margin:16px; color:#0d47a1; }
-.card p{ margin:0 16px 20px; color:#444; }
+.card h3{ margin:16px; color:var(--text-color); }
+.card p{ margin:0 16px 20px; color:var(--text-color); }
 
-/* DATACENTERS */
-.datacenters { background:#eef3f9; padding:60px 0; }
-.datacenters h2{ text-align:center; margin-bottom:34px; color:#002f6c; }
-.dc-grid {
-  display:grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
-  gap:22px;
-}
-.dc-card { background:white; border-radius:12px; overflow:hidden; box-shadow:0 5px 15px rgba(0,0,0,0.09); }
-.dc-card img{ width:100%; height:180px; object-fit:cover; }
-.dc-card h3{ margin:18px; color:#0d47a1; }
-.dc-card p{ margin:0 18px 22px; color:#444; }
-
-/* FOOTER */
 footer { background:#001a33; padding:20px 0; text-align:center; color:white; }
 .btn-container {
   text-align: center;
