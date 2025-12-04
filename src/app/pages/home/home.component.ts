@@ -19,7 +19,8 @@ export class HomeComponent implements OnInit {
   }
 
   public getMethod(){
-    this.http.get('https://jsonplaceholder.typicode.com/posts/1')
+    this.http.get('https://modelos-a3b04-default-rtdb.firebaseio.com/.json')
+          /* https://jsonplaceholder.typicode.com/posts/1 */
           .subscribe((data) => {
           console.log(data);
           this.getJsonValue = data;
