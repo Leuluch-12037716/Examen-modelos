@@ -1,0 +1,1 @@
+:root{--bg-color: #ffffff;--text-color: #000000;--card-bg: #f3f3f3}:root[data-theme=dark]{--bg-color: #121212;--text-color: #ffffff;--card-bg: #1e1e1e}html,body{margin:0;padding:0;width:100%;overflow-x:hidden}body{background-color:var(--bg-color);margin:0;padding:0;overflow-x:hidden}
